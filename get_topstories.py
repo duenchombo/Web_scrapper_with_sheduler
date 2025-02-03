@@ -5,16 +5,14 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 
-# options = Options()
-# options.add_argument("--headless")  # Run in background
-# options.add_argument("--disable-gpu")
-# options.add_argument("--no-sandbox")
+
 
 def top_story_url(homepage_url):
     options = Options()
-    options.add_argument("--headless")  # Run in background
+    options.add_argument("--headless")  
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
+    
     driver = webdriver.Chrome(options=options)
     driver.get(homepage_url)
             

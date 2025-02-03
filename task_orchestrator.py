@@ -16,7 +16,7 @@ def main():
             store_mongodb(collection_articles,headline,article_urls,image,img_link,collection_images)
         else:
                 logging.info(f"Skipping duplicate article: {headline}")
-    # connect_mongodb(news_data, article_urls, img_links)
+    
    
     
 
